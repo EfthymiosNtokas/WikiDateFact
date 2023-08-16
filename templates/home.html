@@ -31,16 +31,22 @@
             
             
             <div class="mb-3">
-              <label for="dateofbirth" class="form-label">Date of Birth</label>
-              <input required type="date" name="dateofbirth" class="form-control" id="dateofbirth">
+              <label for="date" class="form-label">Date</label>
+              <input required type="date" name="date" class="form-control" id="date">
+            </div>
+            <div class ="mb-3">
+              <p>{{quote}}</p>
+
+
             </div>
             
             
             <div class="d-grid gap-2 d-md-block">
               <input type="submit" value="Go" class="btn btn-dark mb-3">
-              <input type="submit" value="Today" class="btn btn-light mb-3">
-              <input type="submit" value="Random" class="btn btn-info mb-3">
+              <input type="submit" name = "today" value="Today" class="btn btn-light mb-3">
+              <input type="submit" name = "random" value="Random" class="btn btn-info mb-3">
             </div>
+
           </form>
         </div>
       </div>
@@ -50,7 +56,6 @@
 
   <script src="static/js/bootstrap.bundle.js"></script>
 </body>
-
 
 
 </html>
