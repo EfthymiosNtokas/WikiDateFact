@@ -9,8 +9,10 @@ class HtmlGetter:
 
     def random_bullet(self):
         #20 to skip some li not good
-        facts=self.content.find_all("li")[20:60]
-        index = random.randint(0,40)
+        facts=self.content.find_all("li")[10:20]
+        print(len(facts))
+        print("ABOVE")
+        index = random.randint(0,10)
         fact = str(facts[index])
         #remove uncessary stuff
         fact = re.sub(r'<[^>]*>|\[[^\]]+\]', '', fact)

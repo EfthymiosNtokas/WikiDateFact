@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MyLibs</title>
+  <title>WikiDate</title>
   <link href="/static/css/bootstrap.css" rel="stylesheet">
 </head>
 
@@ -35,6 +35,7 @@
               <input required type="date" name="date" class="form-control" id="date">
             </div>
             <div class ="mb-3">
+              <b><p>{{date}}</p></b>
               <p>{{quote}}</p>
 
 
@@ -43,8 +44,8 @@
             
             <div class="d-grid gap-2 d-md-block">
               <input type="submit" value="Go" class="btn btn-dark mb-3">
-              <input type="submit" name = "today" value="Today" class="btn btn-light mb-3">
-              <input type="submit" name = "random" value="Random" class="btn btn-info mb-3">
+              <input type="submit" name = "today" value="Today" class="btn btn-light mb-3" formnovalidate >
+              <input type="submit" name = "random" value="Random" class="btn btn-info mb-3" formnovalidate>
             </div>
 
           </form>
